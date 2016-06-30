@@ -1,0 +1,24 @@
+<acme-navbar ng-show="main.showNav"></acme-navbar>
+
+<div class="main-view" ng-class="{false: 'larger-main', true: ''}[main.showNav]">
+  <div class="main-container">
+    <div class="main-header"></div>
+    <div class="main-center" ng-class="{true: 'larger-center', false: ''}[main.editable]">
+      <div class="content-header">
+        <div class="content-header-tools">
+          <i ng-class="{true: 'left', false: 'right'}[main.showNav]"
+             ng-click="main.showNav=!main.showNav"></i>
+          <i ng-class="{true: 'save', false: 'edit'}[main.editable]"
+             ng-click="main.handle()"></i>
+          <i class="cancel" ng-click="main.handle('cancel')" ng-show="main.editable"></i>
+        </div>
+      </div>
+      <div class="content-main">
+        <textarea type="text" ng-if="main.editable"
+             class="edit-content split-content" ng-model="main.content.content"></textarea>
+        <div marked="main.content.content" class="content-marked" ng-class="{true: 'split-content', false: ''}[main.editable]"></div>
+      </div>
+    </div>
+    <div class="main-footer"></div>
+  </div>
+</div>

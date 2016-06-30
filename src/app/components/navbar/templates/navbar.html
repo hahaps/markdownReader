@@ -1,0 +1,13 @@
+<nav class="navbar-left">
+  <div class="nav-title">
+    <a class="desc" href="https://github.com/hahaps">Hahaps Doc</a>
+  </div>
+  <treecontrol class="tree-dark" tree-model="nv.treedata" on-selection="nv.showSelected(node)">
+        <span>{{node.label}}</span>
+        <div class="tree-tools">
+          <i ng-if="node.folder" class="tree-tool-add" ng-click="nv.create(node)"></i>
+          <i class="tree-tool-del" ng-click="nv.destroy(node)"></i>
+          <i class="tree-tool-edit" ng-click="nv.edit(node)"></i>
+        </div>
+  </treecontrol>
+</nav>

@@ -1,0 +1,17 @@
+<div class="modal-form create">
+  <div class="modal-desc">
+    <i class="add"></i><span>Click enter to add a file or a folder.</span>
+  </div>
+  <div class="field" ng-class="{true: 'field-invalid', false: ''}[cr.invalid]">
+    <div class="field-type">
+      <input type="checkbox" ng-model="cr.folder" ng-click="cr.select('folder')" />
+      <span class="text">folder&nbsp;or&nbsp;</span>
+      <input type="checkbox" ng-model="cr.file" ng-click="cr.select('file')" />
+      <span class="text">file&nbsp;with&nbsp;path&nbsp;</span>
+    </div>
+    <span class="field-link" ng-bind="cr.link"></span>
+    <input class="field-name" ng-model="cr.name" type="text" ng-change="cr.valid()"
+           ng-keydown="cr.hander($event)" autofocus="autofocus" />
+    <span ng-show="cr.file">.md</span>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="modal-form modify">
+  <div class="modal-desc">
+    <i class="edit"></i><span>Click enter to update {{ed.folder?'folder':'file'}} name.</span>
+  </div>
+  <div class="field" ng-class="{true: 'field-invalid', false: ''}[ed.invalid]">
+    <span class="field-link" ng-bind="ed.link"></span>
+    <input class="field-name" ng-model="ed.name" type="text"
+           ng-change="cr.valid()" ng-keydown="ed.hander($event)" autofocus="autofocus" />
+    <span ng-show="ed.file">.md</span>
+  </div>
+</div>

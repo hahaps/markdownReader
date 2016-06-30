@@ -1,0 +1,193 @@
+.navbar-left {
+  position: absolute;
+  width: 280px;
+  height: 100%;
+  z-index: 1;
+}
+
+.navbar-left .nav-title {
+  height: 60px;
+}
+
+.navbar-left .nav-title .desc {
+  background-image: url(/assets/images/book.svg);
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  height: 60px;
+  line-height: 60px;
+  color: #ddd;
+  font-size: 16px;
+  padding-left: 60px;
+  display: block;
+  text-decoration: none;
+}
+
+.tree-label .tree-tools {
+  position: absolute;
+  right: 5px;
+  top: 3px;
+  height: 16px;
+}
+
+.tree-label .tree-tools i {
+  width: 16px;
+  height: 16px;
+  margin: 0 2px;
+  opacity: .5;
+  padding: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: none;
+}
+
+.tree-label .tree-tools i.tree-tool-add {
+  background-image: url(/assets/images/add.svg);
+}
+
+.tree-label .tree-tools i.tree-tool-edit {
+  background-image: url(/assets/images/edit.svg);
+}
+
+.tree-label .tree-tools i.tree-tool-del {
+  background-image: url(/assets/images/delete.svg);
+}
+
+.tree-dark .tree-label {
+  display: block;
+  padding-left: 20px;
+  height: 27px;
+  line-height: 27px;
+}
+
+.tree-dark li i.tree-branch-head,
+.tree-dark li i.tree-leaf-head {
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  top: 8px;
+}
+
+treecontrol>ul {
+  padding: 0 5px;
+}
+
+treecontrol li {
+  /*padding: 0 0 0 0;*/
+}
+
+.tree-dark .tree-label:hover {
+  & .tree-tools i {
+    display: inline-block;
+  }
+
+  background-color: rgb(7, 54, 66);
+}
+
+.tree-dark .tree-selected {
+  background-color: rgb(7, 54, 66);
+}
+
+treecontrol.tree-dark li .tree-selected {
+  font-weight: normal;
+}
+
+.navbar-left .nav-title .desc:hover,
+.navbar-left .nav-title .desc:active {
+  color: #eee;
+}
+
+.tree-label .tree-tools i:hover {
+  opacity: 1;
+}
+
+treecontrol.tree-dark li.tree-expanded i.tree-branch-head {
+  background: url(/assets/images/slide-down.svg) center no-repeat;
+}
+
+treecontrol.tree-dark li.tree-collapsed i.tree-branch-head {
+  background: url(/assets/images/slide-right.svg) center no-repeat;
+}
+
+.modal-form {
+  background-color: rgb(0, 43, 54);
+  border-radius: 0 0 5px 5px;
+  padding: 20px;
+}
+
+.modal-form .field {
+  position: relative;
+  border: 2px solid rgb(46, 177, 230);
+  background-color:rgb(0, 31, 39);
+  vertical-align: middle;
+  color: #eee;
+}
+
+.modal-form .field.field-invalid {
+  border: 2px solid rgb(219, 80, 72);
+}
+
+.modal-form .field .field-link {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  height: 24px;
+  font-size: 14px;
+  color: #eee;
+}
+
+.modal-form .field .field-name {
+  border: 0;
+  padding: 5px 5px 5px 0;
+  margin: 0;
+  font-size: 14px;
+  height: 24px;
+  background-image: none;
+  background-color: transparent;
+  color: #eee;
+  border-bottom: 1px dashed #ccc;
+}
+
+.modal-form .field .field-type {
+  display: inline-block;
+  color: #eee;
+  font-size: 14px;
+  height: 24px;
+  line-height: 24px;
+  margin-left: 6px;
+}
+
+.modal-form .field .field-type input {
+  background-color: #666;
+}
+
+.modal-form .btn-del {
+
+}
+
+.modal-desc {
+  height: 30px;
+  font-size: 12px;
+  color: #fefefe;
+}
+
+.modal-desc i {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 8px;
+}
+
+.modal-desc i.add {
+  background-image: url(/assets/images/modal/add.svg);
+}
+
+.modal-desc i.edit {
+  background-image: url(/assets/images/modal/edit.svg);
+}
+
+.modal-desc i.delete {
+  background-size: 99%;
+  background-image: url(/assets/images/delete.svg);
+}
