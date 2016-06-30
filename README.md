@@ -1,13 +1,11 @@
 ### Overview
-<p>
+
 MarkdownReader is a tools write with AngularJS and Node.js to mange markdown files on line. 
-</p>
-<p>
+
 All documents organized or recorded by [Li Xipeng](https://github.com/hahaps "Hahaps"), and they are ** free ** and ** all shared ** for anyone who make sense of it.
-<p>
-<p>
+
 It's welcome for mails from anyone who find any fault in those documents. For Chinese, please send mail to `1096249660@qq.com`, otherwise, please send mail to `lilvpengshuang@gmail.com`.
-</p>
+
 
 ### Snapshoot
 <p> Home page </p>
@@ -19,6 +17,7 @@ It's welcome for mails from anyone who find any fault in those documents. For Ch
 
 ### How To Run
 Do as follow steps to run markdownReader:
+
 1. Install Node.js env:
   - For Ubuntu/Debian, run command `sudo apt-get install nodejs`.
   - For Centos/Fedora/RedHat/Suse/Opensuse, run command `yum install nodejs`.
@@ -31,9 +30,9 @@ Do as follow steps to run markdownReader:
 Then, open your browser to visit `http://localhost:8080` to enjoy markdownReader.
 
 ### About ME
-<p>
+
 My name is [Li Xipeng](https://github.com/hahaps "Hahaps") from China, male, and now work at [Beijing Huron Technology, Ltd](http://www.hihuron.com/ "Beijing Huron Technology, Ltd") as an Openstack developer.
-</p>
+
 
 ### License - MIT
 The markdownReader code is licensed under the MIT license.
