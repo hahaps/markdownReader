@@ -23,7 +23,7 @@ Do as follow steps to run markdownReader:
   - For Centos/Fedora/RedHat/Suse/Opensuse, run command `yum install nodejs`.
   - For Windows, download [Node.js](https://nodejs.org/dist/v4.4.7/node-v4.4.7-x86.msi "Node.js"), and click to install it.
   - For OS X, run command `brew install nodejs`.
-2. Download markdownReader source code by running command `git clone https://github.com/hahaps/markdownReader.git` or [directly](https://github.com/hahaps/markdowReader/archive/master.zip "markdownReader").
+2. Download markdownReader source code by running command `git clone https://github.com/hahaps/markdownReader.git` or [directly](https://github.com/hahaps/markdownReader/archive/master.zip "markdownReader").
 3. Go to the markdownReader folder and run command `node server.js` to start markdownReader(Default port is 8080, or run `node server.js 8888` to change default port).
 4. Optional, install `forever` with command `npm install -g forever` to mange markdownReader service by run command `forever start --minUptime 2000 server.js 8080`.
 
